@@ -47,9 +47,11 @@ $posts = [
 			<h3><?php echo $classiPosts; ?></h3>
 			<ul>
 				<?php foreach($listaPosts as $post) { ?>
-				<h3><?php echo $post["title"]; ?></h3>
-                <li><?php echo $post["author"]; ?></li>
-                <li><?php echo $post["text"]; ?></li>
+                <li>
+                    <h3><?php echo $post["title"]; ?></h3>
+                    <p><?php echo $post["author"]; ?></p>
+                    <p><?php echo $post["text"]; ?></p>
+                </li>
 				<?php } ?>
 			</ul>
 		</li>
